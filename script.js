@@ -5,7 +5,7 @@ const s_age = parseInt(enterAge);
 const enterName = prompt("Яке ваше ім'я?");
 
 const person = {
-        age: s_age,
+    age: s_age,
     name: enterName
 };
 
@@ -20,5 +20,5 @@ else if (person.age < ageVerification) {
     console.log("Доступ заборонено");
 }
 else {
-    console.log("Виникла помилка!");
+    console.log("Виникла помилка! Введіть свій вік цифрами");
 };
