@@ -1,21 +1,22 @@
 
-enterAge = prompt("Який у вас вік?");
-s_age = parseInt(enterAge);
+const enterAge = prompt("Який у вас вік?");
+const s_age = parseInt(enterAge);
 
-enterName = prompt("Яке ваше ім'я?");
-s_name = enterName;
+const enterName = prompt("Яке ваше ім'я?");
 
 person = {
     age: s_age,
-    name: s_name
+    name: enterName
 };
 
 console.log(`Ім'я: ${person.name}, вік: ${person.age}`);
 
-if (person.age >= 18) {
+const ageVerification = 18;
+
+if (person.age >= ageVerification) {
     console.log("Доступ дозволено");
 }
-else if (person.age < 18) {
+else if (person.age < ageVerification) {
     console.log("Доступ заборонено");
 }
 else {
